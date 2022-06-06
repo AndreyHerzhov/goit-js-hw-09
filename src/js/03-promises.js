@@ -12,6 +12,7 @@ refs.form.addEventListener('submit', onFormSubmit)
 
 function onFormSubmit(e) {
   e.preventDefault()
+  let position = 0;
   setTimeout(() => {
   for(let i = 0; i < refs.amount.value; i += 1) {
     const delayStep = +refs.delay.value + +refs.step.value * i
